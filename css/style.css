@@ -133,3 +133,24 @@ ul li {
   width: 400px;
   max-width: 100%;
 }
+.players{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.players>div{
+  width: 40vw;
+  /* background: rgba(255, 255, 255, 0.5); */
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.player-1-btn{
+  width: 50%;
+}
+.player-2-btn{
+  width: 50%;
+  position: relative;
+  left: 50%;
+}
