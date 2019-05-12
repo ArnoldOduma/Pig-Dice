@@ -42,6 +42,11 @@ function roll() {
   }
 };
 
+function reset() {
+  accumulatedRounds = [];
+  accumulatedTotal = 0;
+}
+
 
 /*--------------------------------------------
          USER INTERFACE
