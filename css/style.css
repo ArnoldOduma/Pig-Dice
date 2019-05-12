@@ -154,3 +154,39 @@ ul li {
   position: relative;
   left: 50%;
 }
+.pl-1, .pl-2{
+  background: rgba(255, 153, 0, 0.836);
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.rolled-player-1, .rolled-player-2{
+  font-size: 60px;
+  background: rgba(255, 255, 255, 0.603);
+}
+.accumulated-player-1, .accumulated-player-2{
+  padding: 5px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.678);
+}
+.total-player-1, .total-player-2{
+  background: rgba(255, 255, 255, 0.849);
+  font-size: 40px;
+  text-align: left;
+  padding: 10px;
+}
+.new-game{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#quit{
+  position: absolute;
+  right: 25px;
+  top: 5px;
+  font-size: 40px;
+  cursor: pointer;
+  /* float: right; */
+}
