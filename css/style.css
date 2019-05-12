@@ -18,6 +18,9 @@
   border-radius: 30px;
 }
 
+/*-----------------------------------------------
+          GENERAL PAGE STYLING
+-----------------------------------------------*/
 .message {
   background: green;
 }
@@ -34,6 +37,20 @@ html {
 body {
   overflow-x: hidden;
   background-color: rgb(255, 153, 0);
+}
+
+.shrink {
+  height: 50px;
+  padding: 5px;
+}
+
+.visible {
+  left: 0;
+}
+
+.non-visible {
+  left: 100vw;
+  position: fixed;
 }
 
 /*--------------------------------------------
@@ -220,4 +237,13 @@ span.instruct {
 span.instruct:hover {
   background: rgb(255, 166, 0);
   color: white;
+}
+
+/*----------------------------------------------
+          MEDIA QUERIES
+-------------------------------------------------*/
+@media only screen and (max-width:600px){
+  .player-name form input[type=text]{
+    width: 100%;
+  }
 }
