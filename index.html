@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./images/lg-2.png" type="image/png">
   <title>Pig Dice</title>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <!-- linking stylesheets -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/mdb.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+  <!-- <div class="spinner-border text-warning" role="status">
+    <span class="sr-only">Loading...</span>
+  </div> -->
+
   <section id="land-page">
-    <h1>The Pig Dice</h1>
+    <nav class="nav-bar">
+      <img src="./images/lg-1.png" alt="">
+      <ul>
+        <li id="home">Home</li>
+        <li class="instruct">Instructions</li>
+      </ul>
+    </nav>
+    <div class="container home">
+      <h1>Welcome to the pigdice game.. </h1>
+      <h2>Your objective is to get at or over 100 points before the other player does <br><span class="instruct ">View
+          instructions</span>
+      </h2>
+      <button type="button" class="getName btn btn-outline-amber animated shake infinite slow">Play Now</button>
+    </div>
+    <div class="player-name">
+      <form action="" class="startGame">
+        <label for="">Enter the player names to continue</label><br>
+        <input id="pl-1" type="text" placeholder="Player 1" required>
+        <input id="pl-2" type="text" placeholder="Player 2" required>
+        <button class=" btn btn-outline-info" type="submit" id="playBtn">Play Now</button>
+      </form>
+    </div>
   </section>
-  
 </body>
+
 </html>
