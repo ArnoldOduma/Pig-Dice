@@ -44,6 +44,39 @@
       </form>
     </div>
   </section>
+  <!-- the game section -->
+  <section class="game-sec" id="game-sec">
+    <div id="quit">&cross;</div>
+    <button class="new-game getName btn btn-dark" onclick="window.reload()">New Game</button>
+    <div class="info-cont">
+      <img src="./images/d-1.png" alt="" width="70px" class="rolled-side"> <br>
+      <div class="info container" id="info"></div>
+    </div>
+    <!-- player 1 buttons -->
+    <div class="player-1-btn">
+      <button class="btn btn-amber animated pulse infinite" id="roll-pl-1">Roll</button>
+      <button class="btn btn-danger" id="hold-pl-1">Hold</button>
+    </div>
+    <!-- player 2 buttons -->
+    <div class="player-2-btn">
+      <button class="btn btn-danger" id="hold-pl-2">Hold</button>
+      <button class="btn btn-amber animated pulse infinite" id="roll-pl-2">Roll</button>
+    </div>
+    <div class="players" id="players">
+      <div>
+        <p class="pl-1">Player 1</p>
+        <p class="rolled-player-1"></p>
+        <p class="accumulated-player-1"> This round: <span>0</span> </p>
+        <p class="total-player-1">Total: <span>0</span></p>
+      </div>
+      <div>
+        <p class="pl-2">player 2</p>
+        <p class="rolled-player-2"></p>
+        <p class="accumulated-player-2">This round:<span> 0</span></p>
+        <p class="total-player-2">Total: <span>0</span></p>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
