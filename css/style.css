@@ -18,11 +18,6 @@
   border-radius: 30px;
 }
 
-/* .play{
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-} */
 .message {
   background: green;
 }
@@ -87,11 +82,6 @@ nav ul li:hover {
   margin-top: 2px;
 }
 
-/* ul li:nth-child(1){
-  background: green;
-  left: 50%;
-  
-} */
 ul li {
   display: inline-block;
 }
@@ -123,70 +113,111 @@ ul li {
   z-index: 1300;
   text-align: center;
 }
-.info-cont{
+
+.info-cont {
   min-height: 100px;
 }
-.info{
+
+.info {
   background: rgb(255, 153, 0);
   margin-top: 5px;
   display: inline-block;
   width: 400px;
   max-width: 100%;
 }
-.players{
+
+.players {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.players>div{
+
+.players>div {
   width: 40vw;
-  /* background: rgba(255, 255, 255, 0.5); */
   margin-bottom: 20px;
   margin-top: 10px;
   border-radius: 5px;
   position: relative;
 }
-.player-1-btn{
+
+.player-1-btn {
   width: 50%;
 }
-.player-2-btn{
+
+.player-2-btn {
   width: 50%;
   position: relative;
   left: 50%;
 }
-.pl-1, .pl-2{
+
+.pl-1,
+.pl-2 {
   background: rgba(255, 153, 0, 0.836);
   padding: 5px;
   font-size: 30px;
   border-radius: 5px;
 }
 
-.rolled-player-1, .rolled-player-2{
+.rolled-player-1,
+.rolled-player-2 {
   font-size: 60px;
   background: rgba(255, 255, 255, 0.603);
 }
-.accumulated-player-1, .accumulated-player-2{
+
+.accumulated-player-1,
+.accumulated-player-2 {
   padding: 5px;
   text-align: left;
   background: rgba(255, 255, 255, 0.678);
 }
-.total-player-1, .total-player-2{
+
+.total-player-1,
+.total-player-2 {
   background: rgba(255, 255, 255, 0.849);
   font-size: 40px;
   text-align: left;
   padding: 10px;
 }
-.new-game{
+
+.new-game {
   position: absolute;
   top: 10px;
   left: 50%;
   transform: translate(-50%);
 }
-#quit{
+
+#quit {
   position: absolute;
   right: 25px;
   top: 5px;
   font-size: 40px;
   cursor: pointer;
-  /* float: right; */
+}
+
+/*----------------------------------------
+          INSTRUCTIONS CONTAINER
+--------------------------------------------*/
+#inst-cont {
+  background: rgba(255, 153, 0, 0.89);
+  height: 100vh;
+  width: 100%;
+  padding: 0 10%;
+  position: fixed;
+  top: 0px;
+  padding-top: 70px;
+  display: none;
+  overflow-y: auto;
+  text-align: center;
+}
+
+span.instruct {
+  background: rgba(255, 153, 0, 0.719);
+  padding: 1px 10px;
+  color: black;
+  cursor: pointer;
+}
+
+span.instruct:hover {
+  background: rgb(255, 166, 0);
+  color: white;
 }
