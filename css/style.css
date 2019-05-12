@@ -123,3 +123,13 @@ ul li {
   z-index: 1300;
   text-align: center;
 }
+.info-cont{
+  min-height: 100px;
+}
+.info{
+  background: rgb(255, 153, 0);
+  margin-top: 5px;
+  display: inline-block;
+  width: 400px;
+  max-width: 100%;
+}
