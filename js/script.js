@@ -16,6 +16,32 @@ var random_roll = 0;
 function getAccumulated(total, num) {
   return total + num;
 }
+//checking the winner
+function status() {
+  if (player1Score >= 100) {
+    alert(player_1 + " won");
+  } else if (player2Score >= 100) {
+    alert(player_2 + " won");
+  } else {
+    roll();
+  }
+}
+//Rolling the dice
+function roll() {
+
+  random_roll = Math.floor(Math.random() * 6 + 1);
+  if (random_roll === 1) {
+    accumulatedRounds = [];
+    accumulatedTotal = 0;
+    document.querySelector('.rolled-side').src = "./images/d-" + random_roll + ".png";
+
+  } else {
+    accumulatedRounds.push(random_roll);
+    accumulatedTotal = accumulatedRounds.reduce(getAccumulated, 0);
+    document.querySelector('.rolled-side').src = "./images/d-" + random_roll + ".png";
+  }
+};
+
 
 /*--------------------------------------------
          USER INTERFACE
@@ -58,6 +84,6 @@ $(document).ready(function () {
     // give the sections the player names
     $(".pl-1").text(player_1);
     $(".pl-2").text(player_2);
-    
+
   });
 });
