@@ -1,9 +1,10 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   transition: all 0.4s ease-in-out;
 }
+
 /* ---------------------------------------------
           SCROLL BAR STYLING
 --------------------------------------------- */
@@ -11,30 +12,39 @@
   width: 5px;
   background-color: rgb(119, 119, 117);
 }
+
 .game-sec::-webkit-scrollbar-thumb {
   background-color: rgb(255, 153, 58);
   border-radius: 30px;
 }
+
 /* .play{
   position: relative;
   left: 50%;
   transform: translate(-50%);
 } */
-.message{
+.message {
   background: green;
 }
-.error{
+
+.error {
   padding: 8px;
   background: red;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-body{
+
+body {
   overflow-x: hidden;
   background-color: rgb(255, 153, 0);
 }
-#land-page{
+
+/*--------------------------------------------
+        LANDING PAGE STYLING
+---------------------------------------------*/
+#land-page {
   height: 100vh;
   width: 100vw;
   background-image: url('../images/games-2025663_1280.jpg');
@@ -43,7 +53,8 @@ body{
   background-position: bottom;
   overflow-x: hidden;
 }
-nav{
+
+nav {
   background: rgba(126, 126, 126, 0.521);
   height: 70px;
   padding: 10px;
@@ -53,36 +64,62 @@ nav{
   left: 0px;
   z-index: 1000;
 }
-nav img{
+
+nav img {
   height: 100%;
 }
-ul{
+
+ul {
   float: right;
 }
-nav ul li{
+
+nav ul li {
   border-top: solid white;
   padding: 3% 20px;
   cursor: pointer;
   transition: all 0.1s ease;
 }
-nav ul li:hover{
-  background: rgba(0, 0, 0, 0.678); 
+
+nav ul li:hover {
+  background: rgba(0, 0, 0, 0.678);
   border-bottom: solid white;
   border-top: 0px;
   margin-top: 2px;
 }
+
 /* ul li:nth-child(1){
   background: green;
   left: 50%;
   
 } */
-ul li{
+ul li {
   display: inline-block;
 }
-.home{
+
+.home {
   margin-top: 30vh;
   padding: 30px;
   text-align: center;
   color: white;
   background: rgba(0, 0, 0, 0.445);
+}
+
+/*----------------------------------------
+          GAME SECTION
+  ----------------------------------------*/
+.game-sec {
+  background-image: url('../images/games-2025663_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 0;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0px;
+  left: 100vw;
+  padding-top: 100px;
+  z-index: 1300;
+  text-align: center;
 }
