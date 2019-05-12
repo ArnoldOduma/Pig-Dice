@@ -1,0 +1,88 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+/* ---------------------------------------------
+          SCROLL BAR STYLING
+--------------------------------------------- */
+.game-sec::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(119, 119, 117);
+}
+.game-sec::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 153, 58);
+  border-radius: 30px;
+}
+/* .play{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+} */
+.message{
+  background: green;
+}
+.error{
+  padding: 8px;
+  background: red;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+  background-color: rgb(255, 153, 0);
+}
+#land-page{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../images/games-2025663_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  overflow-x: hidden;
+}
+nav{
+  background: rgba(126, 126, 126, 0.521);
+  height: 70px;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  width: 100vw;
+  left: 0px;
+  z-index: 1000;
+}
+nav img{
+  height: 100%;
+}
+ul{
+  float: right;
+}
+nav ul li{
+  border-top: solid white;
+  padding: 3% 20px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+nav ul li:hover{
+  background: rgba(0, 0, 0, 0.678); 
+  border-bottom: solid white;
+  border-top: 0px;
+  margin-top: 2px;
+}
+/* ul li:nth-child(1){
+  background: green;
+  left: 50%;
+  
+} */
+ul li{
+  display: inline-block;
+}
+.home{
+  margin-top: 30vh;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.445);
+}
