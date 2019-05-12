@@ -1,3 +1,22 @@
+/*-----------------------------------------------
+            BUSINESS LOGIC
+-------------------------------------------------*/
+var player_1 = document.getElementById("pl-1").value;
+var player_2 = document.getElementById("pl-2").value;
+
+var accumulatedRounds = [];
+var accumulatedTotal = 0;
+var total = [];
+var finalScore = 0;
+var player1Score = 0;
+var player2Score = 0;
+var random_roll = 0;
+
+// Adding the accumulated rolls
+function getAccumulated(total, num) {
+  return total + num;
+}
+
 /*--------------------------------------------
          USER INTERFACE
 --------------------------------------------*/
