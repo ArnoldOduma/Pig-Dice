@@ -46,6 +46,7 @@ function reset() {
   accumulatedRounds = [];
   accumulatedTotal = 0;
 }
+
 function holdPlayer1() {
   player1Score = player1Score + accumulatedTotal;
   reset();
@@ -73,21 +74,27 @@ $(document).ready(function () {
     $("#game-sec").addClass("non-visible");
     $(".home").removeClass("non-visible");
     $("#inst-cont").hide();
+
   });
   $(".player-name").hide();
   $(".getName").click(function () {
     $(".player-name").slideToggle();
     $("#game-sec").addClass("non-visible");
+    $(".land-page").addClass("hidden", );
   });
   $("#quit").click(function () {
+    $(".player-name").slideToggle(500);
+    
+    $("#game-sec").removeClass("visible");
     $("#game-sec").addClass("non-visible");
     $(".nav-bar").removeClass("shrink");
     $(".home").removeClass("non-visible");
   });
   $(".instruct").click(function () {
-    $("#inst-cont").show();
+    $("#inst-cont").slideToggle(1000);
     $(".home").addClass("non-visible");
     $("#game-sec").addClass("non-visible");
+    $(".land-page").addClass("hidden", 1000);
   });
 
   // Go to game-play window
@@ -113,7 +120,7 @@ $(document).ready(function () {
     roll();
     $(".info").text("");
     switchPlayer();
-    
+
     $(".rolled-side").show();
     $("p.rolled-player-1").text(random_roll);
     $(".accumulated-player-1 span").text(accumulatedTotal);
@@ -135,11 +142,11 @@ $(document).ready(function () {
     roll();
     $(".info").text("");
     switchPlayer();
-    
+
     $(".rolled-side").show();
     $("p.rolled-player-2").text(random_roll);
     $(".accumulated-player-2 span").text(accumulatedTotal);
-   
+
   });
   // player 2 hold
   $("#hold-pl-2").click(function () {
@@ -148,7 +155,7 @@ $(document).ready(function () {
     $(".player-1-btn,.player-2-btn").slideToggle(100);
     $(".info").text(player_1 + "'s turn");
     reset();
-    
+
   });
 
 });

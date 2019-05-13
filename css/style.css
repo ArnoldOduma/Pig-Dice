@@ -2,18 +2,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /* ---------------------------------------------
           SCROLL BAR STYLING
 --------------------------------------------- */
-.game-sec::-webkit-scrollbar {
+.game-sec::-webkit-scrollbar,
+#inst-cont::-webkit-scrollbar,
+#land-page::-webkit-scrollbar
+ {
   width: 5px;
   background-color: rgb(119, 119, 117);
 }
 
-.game-sec::-webkit-scrollbar-thumb {
+.game-sec::-webkit-scrollbar-thumb, #inst-cont::-webkit-scrollbar-thumb,
+#land-page::-webkit-scrollbar-thumb{
   background-color: rgb(255, 153, 58);
   border-radius: 30px;
 }
@@ -57,7 +61,13 @@ body {
   background-position: bottom;
   overflow-x: hidden;
 }
-
+.land-holder{
+  position: relative;
+  width: 100vw;
+  background-attachment: red;
+  height: 100vh;
+  /* left: -100vw; */
+}
 nav {
   background: rgba(126, 126, 126, 0.521);
   height: 70px;
@@ -96,7 +106,7 @@ ul li {
 }
 
 .home {
-  margin-top: 30vh;
+  margin-top: 20vh;
   padding: 30px;
   text-align: center;
   color: white;
@@ -108,12 +118,13 @@ ul li {
 ------------------------------------------------*/
 .player-name {
   position: fixed;
-  background: rgba(0, 0, 0, 0.973);
+  background: rgba(119, 119, 119, 0.973);
   padding: 30px;
   width: 100%;
   height: 100%;
   top: 0vh;
   z-index: 1200;
+  /* transition: all 2s ease; */
 
 }
 
@@ -247,6 +258,7 @@ ul li {
   position: fixed;
   top: 0px;
   padding-top: 70px;
+  padding-bottom: 20vh;
   display: none;
   overflow-y: auto;
   text-align: center;
@@ -271,6 +283,10 @@ span.instruct:hover {
 .non-visible {
   left: 100vw;
   position: fixed;
+}
+.hidden{
+  left: 100vw;
+  /* transition: all 0.7s ease-in-out; */
 }
 
 /*----------------------------------------------
