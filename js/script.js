@@ -46,6 +46,23 @@ function reset() {
   accumulatedRounds = [];
   accumulatedTotal = 0;
 }
+function holdPlayer1() {
+  player1Score = player1Score + accumulatedTotal;
+  reset();
+}
+
+function holdPlayer2() {
+  player2Score = player2Score + accumulatedTotal;
+  reset();
+}
+
+function switchPlayer() {
+  if (random_roll === 1) {
+    $(".player-1-btn").slideToggle(1000);
+    $(".player-2-btn").slideToggle(1000);
+    $(".info").text("You Entered a one!!!!! opponents's turn");
+  }
+}
 
 
 /*--------------------------------------------
