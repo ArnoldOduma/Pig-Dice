@@ -108,4 +108,49 @@ $(document).ready(function () {
     $(".pl-2").text(player_2);
 
   });
+  // player 1 roll 
+  $("#roll-pl-1").click(function () {
+    roll();
+    $(".info").text("");
+    switchPlayer();
+    
+    $(".rolled-side").show();
+    $("p.rolled-player-1").text(random_roll);
+    $(".accumulated-player-1 span").text(accumulatedTotal);
+    console.log("accum: " + accumulatedTotal);
+  });
+  //player 1 hold
+  $("#hold-pl-1").click(function () {
+    holdPlayer1();
+    $(".total-player-1 span").text(player1Score);
+    $(".player-1-btn,.player-2-btn").slideToggle(100);
+    $(".info").text(player_2 + "'s turn");
+    reset();
+    console.log("Player-1: " + player1Score);
+    console.log("hold accum: " + accumulatedTotal);
+
+  });
+  // player 2 roll  
+  $(".player-2-btn").hide(500);
+  $("#roll-pl-2").click(function () {
+    roll();
+    $(".info").text("");
+    switchPlayer();
+    
+    $(".rolled-side").show();
+    $("p.rolled-player-2").text(random_roll);
+    $(".accumulated-player-2 span").text(accumulatedTotal);
+    console.log("Accum: " + accumulatedTotal);
+  });
+  // player 2 hold
+  $("#hold-pl-2").click(function () {
+    holdPlayer2();
+    $(".total-player-2 span").text(player2Score);
+    $(".player-1-btn,.player-2-btn").slideToggle(100);
+    $(".info").text(player_1 + "'s turn");
+    reset();
+    console.log("Player-2: " + player2Score);
+    console.log("hold accum 2: " + accumulatedTotal);
+  });
+
 });
