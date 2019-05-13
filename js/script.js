@@ -28,7 +28,6 @@ function status() {
 }
 //Rolling the dice
 function roll() {
-
   random_roll = Math.floor(Math.random() * 6 + 1);
   if (random_roll === 1) {
     accumulatedRounds = [];
@@ -46,7 +45,10 @@ function reset() {
   accumulatedRounds = [];
   accumulatedTotal = 0;
 }
+// function Hold(player_1, player_2){
+//   this.holdPlayer1 = pla;
 
+// }
 function holdPlayer1() {
   player1Score = player1Score + accumulatedTotal;
   reset();
@@ -70,6 +72,7 @@ function switchPlayer() {
          USER INTERFACE
 --------------------------------------------*/
 $(document).ready(function () {
+  $(".loader").fadeOut(1000);
   $("#home").click(function () {
     $("#game-sec").addClass("non-visible");
     $(".home").removeClass("non-visible");
